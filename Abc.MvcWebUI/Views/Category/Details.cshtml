@@ -1,0 +1,34 @@
+﻿@model Abc.MvcWebUI.Entity.Category
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container pb-5">
+    <h2>Kategori Bilgileri</h2>
+    <hr/>
+    <div>
+
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.Id }, new { @class = "btn btn-warning text-white" })
+        @Html.ActionLink("Ürün Listesi", "Index", null, new { @class = "btn btn-primary" })
+    </p>
+    </div>>
